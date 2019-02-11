@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Assessment 2</title>
+   <meta charset="UTF-8">
+   <link type="text/css" rel="stylesheet" href="css/index.css"/>
+    <link rel="icon" type="image/png" href="pics/favicon.ico">
+  </head>
+  <body style="overflow: hidden">
+    <div id="headerBanner">
+      <img src="pics/logo.png" alt="Logo" align="left" style="width: auto; height: 10%;">
+      <h1>&nbsp The Booking Company</h1>
+      <button type="button" class="button" onClick="openPage('signUp')" style="margin-left: 60%; margin-top: -200%;">Sign Up</button>
+    </div>
+    <div id="wrapper">
+      <h2>Assessment 2 Index Page</h2>
+      <form enctype="multipart/form-data" method="post" onSubmit="bCIndexForm(event)">
+        <table style="display:table">
+          <tr>
+            <th>Username: </th>
+            <th><input type="text" id="bCUsernameGuess" size="100%"></th>
+          </tr>
+          <tr>
+            <th>Password: </th>
+            <th><input type="password" id="bCPasswordGuess" size="100%"></th>
+          </tr>
+        </table>
+        <br>
+        <div id="buttonArea">
+        <button type="submit" class="button">Submit</button>
+        </div>
+      </form>
+    </div>
+    <p id="problemTextArea"></p>
+  </body>
+  <script src="js/index.js"></script>
+</html>
